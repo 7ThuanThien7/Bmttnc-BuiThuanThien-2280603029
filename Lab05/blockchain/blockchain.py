@@ -42,10 +42,6 @@ class Blockchain:
         return new_proof
 
     def add_transaction(self, sender, receiver, amount):
-        """
-        Thêm một giao dịch mới vào danh sách các giao dịch chờ được thêm vào khối.
-        :return: Index của khối sẽ chứa giao dịch này.
-        """
         self.current_transactions.append({
             'sender': sender,
             'receiver': receiver,
